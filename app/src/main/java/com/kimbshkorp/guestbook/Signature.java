@@ -109,11 +109,11 @@ public class Signature extends AppCompatActivity {
             @Override
             public void run() {
                 try {
-                    MailSender sender = new MailSender("sales@koinoniaenterprises.com.au", "Koi@$alesTeama");
-                    sender.sendMail("Good to see you at ICT 2021",
+                    MailSender sender = new MailSender("sales@koinoniaenterprises.com.au", "Koin.S@les7777");
+                    sender.sendMail(   nameS.getText().toString().trim()+", Good to see you at ICT 2021",
 
 
-                            "Hi " + nameS.getText().toString().trim() + ", \n \n" + "	Many thanks for dropping by our booth at CairoICT 2021. We would like to thank you personally for visiting us.\n 	We hope you enjoyed the event and learned more about our unparalleled solutions for FTTH and Fiber networks.\n	 We noticed that you are interested in " + productS.getText().toString().trim() + ", A Koinonia representative will be in touch with you shortly if you requested more information about this product.\n	 If you need immediate help, please do not hesitate to contact us at: sales@koinoniaenterprises.com.au with any inquiries or further information.\n	At last, As a kind gesture for you, if you place any order within next 3 months, you will get a special discount",
+                            "Hi " + nameS.getText().toString().trim() + ", \n \n" + "	Many thanks for dropping by our booth at ICT 2021. We would like to thank you personally for visiting us.\n 	We hope you enjoyed the event and learned more about our unparalleled solutions for FTTH and Fiber networks.\n	 We noticed that you are interested in " + productS.getText().toString().trim() + ", A Koinonia representative will be in touch with you shortly if you requested more information about this product.\n	 If you need immediate help, please do not hesitate to contact us at: sales@koinoniaenterprises.com.au with any inquiries or further information.\n	At last, As a kind gesture for you, if you place any order within next 3 months, you will get a special discount",
                             "Sales@koinoniaenterprises.com.au",
                             emailS.getText().toString());
                     dialog.dismiss();
@@ -130,7 +130,7 @@ public class Signature extends AppCompatActivity {
 
     private void addUser(String userName, String userMail, String userPhone, String userCompany, String userProduct) {
         // Add a new document with a generated ID
-        DatabaseReference current_user_db = db.child("usersict2020").child(userName);
+        DatabaseReference current_user_db = db.child("ICT2021").child(userName);
         current_user_db.child("Name").setValue(userName);
         current_user_db.child("Mail").setValue(userMail);
         current_user_db.child("Phone").setValue(userPhone);
