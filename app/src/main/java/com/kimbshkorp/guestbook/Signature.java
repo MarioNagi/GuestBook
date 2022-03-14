@@ -109,7 +109,7 @@ public class Signature extends AppCompatActivity {
             @Override
             public void run() {
                 try {
-                    MailSender sender = new MailSender("sales@koinoniaenterprises.com.au", "Koin.S@les7777");
+                    MailSender sender = new MailSender("xxxx@yyyy.com", "password");
                     sender.sendMail(   nameS.getText().toString().trim()+", Good to see you at ICT 2021",
 
 
